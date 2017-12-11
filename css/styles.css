@@ -41,3 +41,19 @@ body {
 	margin-right: 10%;
 
 }
+footer {
+	clear: both;
+	display: inline-block;
+	list-style-type: none;
+	margin: 10%;
+	align-content: center;
+}
+ul li {
+	list-style: none;
+	display: inline-block;
+	align-content: center;
+	
+}
+.copyright {
+	color: gray;
+}
