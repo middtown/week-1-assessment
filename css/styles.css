@@ -1,12 +1,28 @@
 body {
 	background-color: #ffffff;
 }
+/*gradient on background blue*/
 #grad {
     background: red; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(lightblue, blue); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(lightblue, blue); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(lightblue, blue); /* For Firefox 3.6 to 15 */
     background: linear-gradient(lightblue, blue); /* Standard syntax */
+} 
+/*attempt at gradient on boarder*/
+.top-to-bottom {
+    border-width: 3px;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(gray), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(gray, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(gray, rgba(0, 0, 0, 0)) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(gray, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, gray, rgba(0, 0, 0, 0)) 1 100%;
 }
 .header {
 	background-color: #0072b1;
@@ -16,6 +32,7 @@ body {
 }
 .login {
 	float: right;
+	display: inline-block;
 }
 .button {
 	display: inline-block;
@@ -24,7 +41,8 @@ body {
 }
 .band {
 	display: inline-block;
-}
+} 
+/*gets the phone over in the top with negative margin*/
 .phones {
 	float: left;
 	margin-top: -20%;
@@ -52,8 +70,8 @@ ul li {
 	list-style: none;
 	display: inline-block;
 	align-content: center;
-	
-}
+
+} /*specific for one are in the footer.*/
 .copyright {
 	color: gray;
 }
